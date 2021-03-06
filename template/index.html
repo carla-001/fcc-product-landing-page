@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- metadata elements -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/style.css">
+  <title>Landing Page | Succulents R'US</title>
+  <!--[if lt IE 9]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+</head>
+
+<body>
+  <header id="header">
+    <!--logo and nav-->
+    <nav id="topbar">
+      <h1 id="logo-name">Succulents R'US</h1>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#features" title="link1">Features</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#selection" title="link2">Selection</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#package-container" title="link3">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <!--landing page banner-->
+    <figure>
+      <div id="img-container">
+        <img id="header-img" src="https://images-na.ssl-images-amazon.com/images/I/81PHZUB2dXL._AC_SL1500_.jpg" alt="succulent plants">
+      </div>
+      <figcaption id="img-credits">Image courtesy of Amazon.com</figcaption>
+    </figure>
+  </header>
+  
+  <main>
+    <!--form section-->
+    <section class=contact-form>
+      <div class="section-container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h2>Order a custom planter</h2>
+          <p>The best way to reach us is by phone (123) 456-7890,<br>
+            but complete the form below and we’ll get back to you as soon as possible.<br>
+            <abbr title="required">(*required fields)</abbr>
+          </p>
+          <div class="question-block">
+            <label id="name-label" type="text-num" for="name">Name: <abbr title="required" aria-label="required">*</abbr></label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="question-block">
+            <label id="email-label" type="text-num" for="email">Email: <abbr title="required" aria-label="required">*</abbr></label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="question-block">
+            <label id="habits-label" for="habits">Custom Planter:<abbr title="required" aria-label="required">*</abbr><br>(250 max characters)</label>
+            <textarea id="habits" name="habits" maxlength="250" rows="4" placeholder="Tell us about your custom planterette..." required></textarea>
+          </div>
+          <input id="submit" type="submit" value="Sumbit Request">
+        </form>
+      </div>
+    </section>
+    <!--features section-->
+    <section id="features">
+      <div class="section-container">
+        <h3>Feature A</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatibus quia excepturi deleniti optio.</p>
+
+        <h3>Feature B</h3>
+        <p>Dolore dolorem ducimus quod adipisci perferendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, aliquid!</p>
+
+        <h3>Feature C</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequuntur tenetur exercitationem tempore.</p>
+      </div>
+    </section>
+    <!--selection section-->
+    <section id="selection">
+      <div class="section-container">
+        <h3>Selection</h3>
+        <iframe id="video" src="https://www.youtube.com/embed/-SBFpax5N10?start=7" frameborder="0" allowfullscreen>
+          Your browser does not support the video tag.
+        </iframe>
+      </div>
+    </section>
+    <!--packages-->
+    <section id="package-container">
+      <div class="section-container">
+        <h3>Pricing</h3>
+        <div id="packages">
+          <div class="packageX">
+            <h3 id="package-head" class="fill">Planter A</h3>
+            <ul id="package-desc">
+              <li>Lorem ipsum dolor.</li>
+              <li>Alias nihil esse possimus</li>
+              <li>Distinctio iste dicta esse.</li>
+            </ul>
+          </div>
+          <div class="packageX">
+            <h3 id="package-head" class="fill">Planter B</h3>
+            <ul id="package-desc">
+              <li>Lorem ipsum dolor.</li>
+              <li>Alias nihil esse possimus</li>
+              <li>Distinctio iste dicta esse.</li>
+            </ul>
+          </div>
+
+          <div class="packageX">
+            <h3 id="package-head" class="fill">Planter C</h3>
+            <ul id="package-desc">
+              <li>Lorem ipsum dolor.</li>
+              <li>Alias nihil esse possimus</li>
+              <li>Distinctio iste dicta esse.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--footer-->
+  <footer class="fill">
+    <span>Copyright 2019, Succulents R'US</span>
+  </footer>
+</body>
+
+</html>
